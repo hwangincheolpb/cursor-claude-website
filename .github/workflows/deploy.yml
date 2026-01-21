@@ -21,6 +21,13 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+          exclude-paths: |
+            .git
+            .github
+            README.md
+            deploy.ps1
+            wait_and_push.ps1
+            .gitignore
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
