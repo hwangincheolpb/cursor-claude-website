@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>왜 Cursor Claude를 써야 하는가?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 60px 40px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .reason-card {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .reason-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .reason-card h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .reason-card p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+
+        .comparison-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .check {
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .cross {
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px;
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 15px;
+        }
+
+        .cta-section h2 {
+            color: white;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .comparison-table {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>왜 Cursor Claude를 써야 하는가?</h1>
+            <p>차세대 AI 코딩 어시스턴트의 강력한 이유</p>
+        </header>
+
+        <div class="content">
+            <section class="section">
+                <h2>핵심 이유</h2>
+                
+                <div class="reason-card">
+                    <h3>🚀 코드베이스 전체 이해</h3>
+                    <p>Cursor Claude는 단순히 코드를 작성하는 것이 아니라, 프로젝트 전체 구조와 맥락을 이해합니다. 수천 개의 파일을 분석하고, 프로젝트의 아키텍처를 파악하여 더 정확하고 일관성 있는 코드를 생성합니다.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h3>💡 컨텍스트 인식 코딩</h3>
+                    <p>기존 AI 코딩 도구들과 달리, Cursor Claude는 현재 작업 중인 파일뿐만 아니라 관련된 모든 파일을 함께 고려합니다. 함수 호출, 의존성, 프로젝트 규칙을 모두 이해하여 더 나은 제안을 제공합니다.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h3>🔧 실시간 코드 수정 및 리팩토링</h3>
+                    <p>코드를 작성한 후에도 실시간으로 개선 제안을 받을 수 있습니다. 버그 수정, 성능 최적화, 코드 스타일 개선을 자동으로 제안하여 코드 품질을 지속적으로 향상시킬 수 있습니다.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h3>📚 학습 및 적응 능력</h3>
+                    <p>프로젝트의 코딩 스타일과 패턴을 학습하여, 팀의 코딩 컨벤션에 맞는 코드를 생성합니다. 시간이 지날수록 더 정확하고 프로젝트에 맞는 제안을 제공합니다.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h3>⚡ 빠른 개발 속도</h3>
+                    <p>반복적인 코드 작성, 문서화, 테스트 작성 등의 작업을 자동화하여 개발 속도를 획기적으로 향상시킵니다. 개발자는 복잡한 로직과 아키텍처 설계에 집중할 수 있습니다.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h3>🛡️ 버그 예방 및 코드 품질</h3>
+                    <p>코드를 작성하는 동시에 잠재적인 버그를 감지하고, 보안 취약점을 찾아내며, 최적의 패턴을 제안합니다. 코드 리뷰 전에 이미 많은 문제를 해결할 수 있습니다.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>다른 도구와의 비교</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>기능</th>
+                            <th>Cursor Claude</th>
+                            <th>일반 AI 코딩 도구</th>
+                            <th>전통적 IDE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>코드베이스 전체 이해</td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>컨텍스트 인식 제안</td>
+                            <td><span class="check">✓</span></td>
+                            <td>부분적</td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>실시간 리팩토링</td>
+                            <td><span class="check">✓</span></td>
+                            <td>제한적</td>
+                            <td>수동</td>
+                        </tr>
+                        <tr>
+                            <td>프로젝트 패턴 학습</td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>버그 예방</td>
+                            <td><span class="check">✓</span></td>
+                            <td>부분적</td>
+                            <td>수동 검사</td>
+                        </tr>
+                        <tr>
+                            <td>자동 문서화</td>
+                            <td><span class="check">✓</span></td>
+                            <td>부분적</td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="section">
+                <h2>실제 사용 사례</h2>
+                
+                <div class="reason-card">
+                    <h3>대규모 프로젝트 리팩토링</h3>
+                    <p>수백 개의 파일을 가진 프로젝트에서 API 변경이 필요할 때, Cursor Claude는 모든 관련 파일을 찾아 일관성 있게 수정합니다. 수동으로 작업한다면 며칠이 걸릴 작업을 몇 시간 안에 완료할 수 있습니다.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h3>새로운 기능 추가</h3>
+                    <p>기존 코드베이스에 새로운 기능을 추가할 때, 프로젝트의 아키텍처와 패턴을 이해하여 일관성 있는 코드를 생성합니다. 팀의 코딩 스타일을 따르는 코드를 자동으로 작성합니다.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h3>테스트 코드 작성</h3>
+                    <p>기존 코드를 분석하여 포괄적인 테스트 케이스를 자동으로 생성합니다. 엣지 케이스와 예외 상황까지 고려하여 테스트 커버리지를 크게 향상시킵니다.</p>
+                </div>
+            </section>
+
+            <div class="cta-section">
+                <h2>지금 시작하세요</h2>
+                <p>Cursor Claude로 개발 생산성을 한 단계 끌어올리세요. 더 빠르고, 더 정확하고, 더 나은 코드를 작성할 수 있습니다.</p>
+                <a href="https://cursor.sh" class="cta-button">Cursor 시작하기</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Cursor Claude 웹사이트. 개발 생산성을 높이는 AI 코딩 어시스턴트.</p>
+        </footer>
+    </div>
+</body>
+</html>
